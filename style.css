@@ -136,3 +136,41 @@ footer p { margin: 5px 0;
         grid-template-columns: 1fr;
     }
 }
+.ad-banner {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.ad-label {
+    font-size: 11px !important;
+    color: #777;
+    letter-spacing: 1px;
+    margin-bottom: 8px !important;
+}
+
+.ad-banner h2 {
+    margin-bottom: 10px;
+}
+
+.ad-banner p {
+    line-height: 1.5;
+}
+
+.ad-banner a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.ad-banner a:hover {
+    opacity: 0.8;
+}
