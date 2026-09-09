@@ -2,102 +2,56 @@
 
 
 <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, 
-    initial-scale=1.0"> <title>Spotify KE</title> <link rel="stylesheet" 
-    href="style.css">
-</head> <body> <header> <h1>Spotify KE</h1> <p>Kenya's Sports & Entertainment 
-    News</p> <nav>
-    <a href="index.html">Home</a>
-    <a href="#football" onclick="filterNews('football')">Football</a>
-    <a href="#sports" onclick="filterNews('sports')">Sports</a>
-    <a href="#entertainment" onclick="filterNews('entertainment')">Entertainment</a>
-    <a href="#trending" onclick="showAllNews()">Trending</a>
-</nav> </header> <main> <section class="hero"> <h2>Latest News</h2> <p> Get 
-            the latest sports and entertainment stories from Spotify KE.
-        </p> <div class="search-box"> <input type="text" id="searchInput" 
-                placeholder="Search news..."
-            >
-            <button onclick="searchNews()"> Search </button> </div> </section> 
-    <section class="categories">
-        <h2>Categories</h2> <div class="category-grid"> <div 
-            class="category-card">
-                <span>⚽</span> <h3>Football</h3> <p>Latest football news and 
-                transfers.</p>
-            </div> <div class="category-card"> <span>🏆</span> <h3>Sports</h3> 
-                <p>Sports stories and updates.</p>
-            </div> <	        <article class="news-card" data-category="football">
 
-            <p class="category">⚽ FOOTBALL</p>
-
-            <h2>
-                Real Madrid Step Up Interest in Signing Arsenal Midfielder Declan Rice
-            </h2>
-
-            <p>
-                Real Madrid are reportedly keeping a close eye on Arsenal
-                midfielder Declan Rice as Arsenal work to secure his future.
-            </p>
-
-            <a href="article.html" class="read-more">
-                Read Full Story →
-            </a>
-
-        </article>
-
-
-        <article class="news-card" data-category="sports">
-
-            <p class="category">🏆 SPORTS</p>
-
-            <h2>
-                Latest Sports Updates
-            </h2>
-
-            <p>
-                Get the latest sports stories, results and major developments
-                from around the world.
-            </p>
-
-            <a href="#" class="read-more">
-                Read Full Story →
-            </a>
-
-        </article>
-
-
-="        <article class="news-card" data-category="entertainment">
-
-            <p class="category">🎬 ENTERTAINMENT</p>
-
-            <h2>
-                Latest Entertainment News
-            </h2>
-
-            <p>
-                Discover the latest entertainment stories, celebrities,
-                movies and trending topics.
-            </p>
-
-            <a href="#" class="read-more">
-                Read Full Story →
-            </a>
-
-        </article>
-
-    </div>
-
-</section> <h2 
-        class="section-title">
-            Top Story </h2> <article class="news-card"> <div 
-            class="news-content">
-                <p class="category"> ⚽ FOOTBALL </p> <h2> Real Madrid Step Up 
-                    Interest in Signing Arsenal Midfielder Declan Rice
-                </h2> <p> Real Madrid are reportedly keeping a close eye on 
-                    Arsenal midfielder Declan Rice as Arsenal work to secure his 
-                    long-term future.
-                </p> <a href="article.html" class="read-more"
-                >
-                    Read Full Story → </a> </div> </article> </section> </main> 
-<footer>
-    <p>© 2026 Spotify KE</p> <p> Sports • Entertainment • Trending </p> 
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0"> <title>Spotify KE</title> <link 
+    rel="stylesheet" href="style.css">
+</head> <body> <header> <h1>Spotify KE</h1> <p>Kenya's Sports & Entertainment News</p> <nav> 
+        <a href="index.html">Home</a> <a href="#football" 
+        onclick="filterNews('football')">Football</a> <a href="#sports" 
+        onclick="filterNews('sports')">Sports</a> <a href="#entertainment" 
+        onclick="filterNews('entertainment')">Entertainment</a> <a href="#trending" 
+        onclick="showAllNews()">Trending</a>
+    </nav> </header> <main> <section class="hero"> <h2>Latest News</h2> <p>Get the latest 
+        sports and entertainment stories from Spotify KE.</p> <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search news..."> <button 
+            onclick="searchNews()">Search</button>
+        </div> </section> <section class="categories"> <h2>Categories</h2> <div 
+        class="category-grid">
+            <div class="category-card" onclick="filterNews('football')"> <span>⚽</span> 
+                <h3>Football</h3> <p>Latest football news and transfers.</p>
+            </div> <div class="category-card" onclick="filterNews('sports')"> <span>🏆</span> 
+                <h3>Sports</h3> <p>Sports stories and updates.</p>
+            </div> <div class="category-card" onclick="filterNews('entertainment')"> 
+                <span>🎬</span> <h3>Entertainment</h3> <p>Entertainment and celebrity 
+                news.</p>
+            </div> </div> </section> <section id="news"> <h2 class="section-title">Latest 
+        Stories</h2> <div class="news-grid">
+            <article class="news-card" data-category="football"> <p class="category">⚽ 
+                FOOTBALL</p> <h2>
+                    Real Madrid Step Up Interest in Signing Arsenal Midfielder Declan Rice 
+                </h2> <p>
+                    Real Madrid are reportedly keeping a close eye on Arsenal midfielder 
+                    Declan Rice as Arsenal work to secure his future.
+                </p> <a href="article.html" class="read-more"> Read Full Story → </a> 
+            </article> <article class="news-card" data-category="football">
+                <p class="category">⚽ FOOTBALL</p> <h2> Kenya to Host Regional Football 
+                    Legends Tournament
+                </h2> <p> Kenya is set to host a regional football legends tournament 
+                    bringing together former football stars.
+                </p> <a href="legends.html" class="read-more"> Read Full Story → </a> 
+            </article> <article class="news-card" data-category="sports">
+                <p class="category">🏆 SPORTS</p> <h2> Latest Sports Updates </h2> <p> Get 
+                    the latest sports stories, results and major developments from around the 
+                    world.
+                </p> <a href="#" class="read-more"> Read Full Story → </a> </article> 
+            <article class="news-card" data-category="entertainment">
+                <p class="category">🎬 ENTERTAINMENT</p> <h2> Latest Entertainment News </h2> 
+                <p>
+                    Discover the latest entertainment stories, celebrities, movies and 
+                    trending topics.
+                </p> <a href="#" class="read-more"> Read Full Story → </a> </article> </div> 
+    </section>
+</main> <footer> <p>© 2026 Spotify KE</p> <p> Sports • Entertainment • Trending </p> 
 </footer> <script src="script.js"></script> </body>
 </html>
